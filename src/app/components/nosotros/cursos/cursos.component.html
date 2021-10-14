@@ -1,0 +1,6 @@
+<div class="contenedor-cursos">
+    <div *ngFor="let curso of [1, 2, 3, 4, 5, 6]; let idx = index" class="curso">
+        <img src="./assets/img/cursos/{{id}}/20{{idx+1}}.jpg" alt="">
+        <h4 [routerLink]="['/servicios']">Lorem, ipsum dolor.</h4>
+    </div>
+</div>

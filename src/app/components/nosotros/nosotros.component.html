@@ -1,0 +1,27 @@
+<app-banner [titulo]="'Nosotros'"
+            [desc]="'Jumpstart your marketing efforts with this example based on Apple’s marketing pages.'" >
+</app-banner>
+
+<div class="contendor-principal bg-light p-4 mb-4">
+    <div class="contenedor-cards">
+        <div class="card-persona" *ngFor="let persona of nosotros">
+            <img src="./assets/img/nosotros/{{ persona.id }}.jpg" alt="">
+            <h3>{{ persona.nombre }}</h3>
+            <p>{{ persona.cargo }}</p>
+            <p>{{ persona.desc }}</p>
+            <button (click)="navegar('detalles/trabajos', persona.id )" class="btn btn-outline-dark">Detalles</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="_nosotros.detallesActivado" class="container mt-4">
+    <div class="row d-flex justify-content-center">
+        <div class="btn-group w-50" role="group" aria-label="Basic outlined example">
+            <a type="button" class="btn btn-outline-dark" (click)="navegar('detalles/trabajos')">Trabajos</a>
+            <a type="button" class="btn btn-outline-dark" (click)="navegar('detalles/cursos')">Cursos</a>
+            <a type="button" class="btn btn-outline-dark" (click)="navegar('detalles/posts')">Posts</a>
+        </div>
+    </div>
+    <div class="mb-5">
+        <router-outlet></router-outlet>
+    </div>
+</div>

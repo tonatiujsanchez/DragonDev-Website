@@ -1,0 +1,17 @@
+<div class="contenedor-articulos">
+    <div *ngFor="let articulo of articulos" class="articulo">
+        <div class="foto">
+            <img src="./assets/img/blog/{{ articulo.idArticulo }}.jpg" alt="">
+        </div>
+        <div class="desc">
+            <h4>{{ articulo.titulo }}</h4>
+            <div class="detalles">
+                <p class="categoria">{{ articulo.categoria }}</p>
+                <p class="fecha">{{ articulo.fecha }}</p>
+                <p class="autor">Por: <span>{{ getAutor( articulo.idAutor ).nombre }}</span></p>
+            </div>
+            <p>{{ articulo.desc }}</p>
+            <button class="btn btn-outline-dark" (click)="verArticulo( articulo.idArticulo )">Ver más</button>
+        </div>
+    </div>
+</div>

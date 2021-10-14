@@ -1,0 +1,231 @@
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    color: #404040;
+}
+.contenedor-servicios p{
+    font-size: 1.1rem;
+}
+.servicio{
+    background-color: #FFF;
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0 2px 0 #d6d6d6;
+    transition: all .5s;
+}
+.servicio:hover {
+    box-shadow: 0 2px 0 #4aa2d1;
+}
+
+.servicio h3{
+    margin: 20px 0;
+}
+
+
+.cabecera{
+    padding: 30px;
+}
+.cabecera h2{
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.cabecera h2 span{
+    font-weight: 300;
+}
+
+/* #4aa2d1 */
+/* #212529! */
+
+/* === === Caracteristicas Principales === === */
+.caracteristicas-principales{
+    background-color: #212529;
+    color: #ececec;
+    padding: 80px 0;
+}
+.caracteristicas-principales .contenedor{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+.caracteristicas-principales .contenedor .foto{
+    transition: all 0.5s;
+}
+.caracteristicas-principales .contenedor .foto:hover{
+    transform: scale(1.08);
+}
+.contendor-caracteristicas{
+    margin-top: 40px;
+}
+.contendor-caracteristicas h2{
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+.contendor-caracteristicas h2 span{
+    font-weight: 900;
+}
+.contendor-caracteristicas .subtitulo{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.contendor-caracteristicas .caracteristica{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contendor-caracteristicas .caracteristica .icono{
+    width: 15%;
+}
+.contendor-caracteristicas .caracteristica .icono i{
+    font-size: 40px;
+    color: #4aa2d1;
+}
+
+.contendor-caracteristicas .caracteristica .desc h4{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.contendor-caracteristicas .caracteristica .desc p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* =============================================== */
+
+.servicios-varios.contenedor{
+    padding: 60px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title{
+    color: #212529;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+.title span{
+    font-weight: 900;
+}
+
+/* ====== */
+.icon-blue{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #4aa2d1;
+}
+/* ====== */
+
+.servicios-varios .subtitulo{
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.contenedor-servicios-varios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.contenedor-servicios-varios .servicio-var{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 100%;
+}
+.contenedor-servicios-varios .servicio-var .icono{
+    width: 15%;
+    font-size: 2rem;
+    color: #4aa2d1;
+}
+.contenedor-servicios-varios .servicio-var .desc h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.contenedor-servicios-varios .servicio-var .desc p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+/* ========== ============= ============ */
+.blog-posts{
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+.blog-posts img{
+    width: 100%;
+}
+.blog-posts .contenedor{
+    margin: 0 auto;
+    width: 70%;
+}
+.contenedor-posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+
+.contenedor-posts .post{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.contenedor-posts .post img:hover{
+    transform: scale(1.3);
+}
+
+
+.contenedor-posts .post .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(38,39,42,0.8);
+    z-index: 2;
+    transition: all 0.5s;
+}
+.contenedor-posts .post .overlay:hover{
+    background: rgba(38,39,42,0.5);
+}
+
+.contenedor-posts .post .overlay .content{
+    color: #ececec;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.contenedor-posts .post .overlay .content h4{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+
+.contenedor-posts .post .overlay .content .detalles{
+    display: flex;
+}
+.contenedor-posts .post .overlay .content .detalles p{
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}

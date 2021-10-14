@@ -1,0 +1,28 @@
+.banner{
+    width: 100%;
+    background-color: #212529;
+    height: 400px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+h2, p{
+    text-align: center;
+}
+h2{
+    font-weight: 600;
+}
+
+.foto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+img{
+    width: 40%;
+    border-radius: 21px;
+    margin-top: -180px;
+}

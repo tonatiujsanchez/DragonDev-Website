@@ -1,0 +1,19 @@
+<app-banner> </app-banner>
+
+<div class="contendor-principal bg-light p-5">
+    <div class="articulo">
+        <div class="foto">
+            <img src="./assets/img/blog/{{ articulo.idArticulo }}.jpg" alt="">
+        </div>
+        <h3>{{ articulo.titulo }}</h3>
+        <div class="detalles">
+            <p class="categoria">{{ articulo.categoria }}</p>
+            <p class="fecha">{{ articulo.fecha }}</p>
+            <p class="autor"><span>Por: </span>{{ getAutor( articulo.idAutor ).nombre }}</p>
+        </div>
+        <p>{{ articulo.desc }}</p>
+        <p>{{ articulo.desc }}</p>
+        <p>{{ articulo.desc }}</p>
+        <p>{{ articulo.desc }}</p>
+    </div>
+</div>

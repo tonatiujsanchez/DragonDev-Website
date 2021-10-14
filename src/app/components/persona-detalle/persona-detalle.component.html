@@ -1,0 +1,9 @@
+<div class="banner">
+    <h2 class="display-5">{{ persona.nombre }}</h2>
+    <p class="lead">{{ persona.cargo }} - {{ persona.edad }} Años</p>
+    <span *ngIf="persona.activo" (click)="activar()"  class="btn badge rounded-pill bg-success">Activo</span>
+    <span *ngIf="!persona.activo" (click)="activar()"  class="btn badge rounded-pill bg-danger">Inactivo</span>
+</div>
+<div class="foto">
+    <img src="./assets/img/profile/{{ persona.id}}.jpg" alt="">
+</div>

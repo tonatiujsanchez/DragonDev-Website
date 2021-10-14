@@ -1,0 +1,29 @@
+.articulo{
+    width: 90%;
+    margin: 0 auto;
+}
+.articulo .foto{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.articulo .foto img{
+    width: 100%;
+}
+
+.articulo h3{
+    margin-bottom: 15px;
+}
+
+.articulo .detalles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.articulo .detalles p{
+    margin: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 20px;
+    font-size: 18px;
+   }

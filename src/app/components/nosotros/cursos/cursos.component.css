@@ -1,0 +1,18 @@
+.contenedor-cursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+}
+.contenedor-cursos .curso{
+    text-align: center;
+    width: 40%;
+    margin-bottom: 40px;
+}
+.contenedor-cursos .curso img{
+    width: 100%;
+    margin-bottom: 10px;
+}
